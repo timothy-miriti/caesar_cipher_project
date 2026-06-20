@@ -49,7 +49,7 @@ Python 3.10+
 
 External package:
 
-colorama → for colorful terminal output.
+colorama → for colorful terminal output
 
 🧪 Testing
 Test encryption with different shift keys.
@@ -73,3 +73,9 @@ Fork the repo.
 2.Commit changes with meaningful messages.
 
 3.Submit a pull request.
+
+✅ requirements.txt
+Here’s the minimal requirements.txt you can include:
+
+Code
+colorama==0.4.6
