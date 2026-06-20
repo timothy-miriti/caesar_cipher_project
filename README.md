@@ -84,4 +84,5 @@ Here’s the minimal requirements.txt you can include:
 Code
 
 colorama==0.4.6
+
 tabulate==0.10.0
