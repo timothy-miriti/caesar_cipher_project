@@ -78,4 +78,5 @@ Fork the repo.
 Here’s the minimal requirements.txt you can include:
 
 Code
+
 colorama==0.4.6
