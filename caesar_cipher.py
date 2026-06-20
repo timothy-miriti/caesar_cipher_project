@@ -1,5 +1,11 @@
 from colorama import Fore, Style, init
+from tabulate import tabulate
 init(autoreset=True)
+history = [["Action", "Input Text", "Shift Key", "Output Text"]
+]
+print(tabulate(history, headers="firstrow", tablefmt="grid"))
+
+print(f"{Fore.CYAN}{Style.BRIGHT}Welcome to the Caesar Cipher program!")
 
 alphabet=['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm','n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 def encryption(plain_text, shift_key):
@@ -11,6 +17,7 @@ def encryption(plain_text, shift_key):
             cipher_text += alphabet[new_position]
         else:
             cipher_text += char
+    history.append(("encrypt", plain_text, shift_key, cipher_text))
     print(f"{Style.BRIGHT}Here is the text after encryption: {Fore.GREEN}{cipher_text}")
 
 def decryption(cipher_text, shift_key):
@@ -22,6 +29,7 @@ def decryption(cipher_text, shift_key):
             plain_text += alphabet[new_position]
         else:
             plain_text += char
+    history.append(("decrypt", cipher_text, shift_key, plain_text))
     print(f"{Style.BRIGHT}Here is the text after decryption: {Fore.GREEN}{plain_text}")
 
         

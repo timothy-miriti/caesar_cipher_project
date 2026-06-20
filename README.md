@@ -7,6 +7,8 @@ Encryption → Shift letters forward by a given key.
 Decryption → Shift letters backward by a given key.
 
 Colorful output → Uses colorama for styled text in the terminal.
+table output → Uses tabulate  in the terminal.
+
 
 Interactive CLI → Prompts user for action, message, and shift key.
 
@@ -20,6 +22,7 @@ cd caesar-cipher-cli
 2.Install dependencies:
 bash
 pip install colorama
+pip install tabulate
 
 3.Run the program:
 bash
@@ -50,6 +53,7 @@ Python 3.10+
 External package:
 
 colorama → for colorful terminal output
+tabulate → for table terminal output
 
 🧪 Testing
 Test encryption with different shift keys.
@@ -80,3 +84,4 @@ Here’s the minimal requirements.txt you can include:
 Code
 
 colorama==0.4.6
+tabulate==0.10.0
